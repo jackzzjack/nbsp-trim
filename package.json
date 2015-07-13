@@ -1,6 +1,6 @@
 {
   "name": "nbsp-trim",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Trim the whitespace and &nbsp; string.",
   "main": "index.js",
   "scripts": {
@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/jackzzjack/nbsp-trim/issues"
   },
-  "homepage": "https://github.com/jackzzjack/nbsp-trim"
+  "homepage": "https://github.com/jackzzjack/nbsp-trim",
+  "dependencies": {
+    "tape": "^4.0.0"
+  }
 }
