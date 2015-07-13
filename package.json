@@ -1,0 +1,25 @@
+{
+  "name": "nbsp-trim",
+  "version": "0.0.2",
+  "description": "Trim the whitespace and &nbsp; string.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jackzzjack/nbsp-trim.git"
+  },
+  "keywords": [
+    "trim",
+    "whitespace",
+    "&nbsp;",
+    "nbsp"
+  ],
+  "author": "Yu-Ting, Kao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jackzzjack/nbsp-trim/issues"
+  },
+  "homepage": "https://github.com/jackzzjack/nbsp-trim"
+}
