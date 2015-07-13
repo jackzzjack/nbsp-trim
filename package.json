@@ -1,10 +1,10 @@
 {
   "name": "nbsp-trim",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Trim the whitespace and &nbsp; string.",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "mocha test.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/jackzzjack/nbsp-trim",
   "dependencies": {
-    "tape": "^4.0.0"
+    "mocha": "^2.2.5"
   }
 }

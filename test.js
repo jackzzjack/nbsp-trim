@@ -1,12 +1,22 @@
-var ta = require('./index.js');
-var tape = require('tape');
+var assert = require('assert');
+var trims = require('./index.js');
 
-tape('Starting test ...', function(t) {
-	t.equal(ta(' 123 '), '123');
-	t.equal(ta('123 '), '123');
-	t.equal(ta(' 123'), '123');
-	t.equal(ta('&nbsp;123'), '123');
-	t.equal(ta('123&nbsp;'), '123');
-	t.equal(ta('1&nbsp;23'), '123');
-	t.end();
+describe('nbsp-trim', function() {
+	describe('#String("123")', function() {
+		it('should return "123" when call the nbsp-trim', function() {
+			assert.equal("123", trims("123"));
+		});
+	});
+
+	describe('#String("&nbsp;123")', function() {
+		it('should return "123" when call the nbsp-trim', function() {
+			assert.equal("123", trims("&nbsp;123"));
+		});
+	});
+
+	describe('#String("123&nbsp;")', function() {
+		it('should return "123" when call the nbsp-trim', function() {
+			assert.equal("123", trims("123&nbsp;"));
+		});
+	});
 });
